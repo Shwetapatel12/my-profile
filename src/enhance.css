@@ -1,0 +1,19 @@
+/* Extra styles for the React version */
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--on);padding:8px 14px;border-radius:8px;z-index:20}.skip:focus{left:12px}
+nav .links{display:flex;gap:22px}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;width:38px;height:36px;font-size:18px;cursor:pointer;flex:none}
+.pf{transition:transform .25s ease;will-change:transform}
+.more{background:none;border:0;color:var(--accent);font:700 15px 'Bricolage Grotesque',sans-serif;cursor:pointer;padding:0 0 0 8px}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.cf{display:grid;gap:12px}
+.cf input,.cf textarea{font:400 16px 'Source Serif 4',Georgia,serif;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:8px;padding:12px 14px;width:100%;resize:vertical}
+.cf ::placeholder{color:rgba(255,255,255,.7)}
+.cf input:focus,.cf textarea:focus{outline:3px solid #fff;outline-offset:2px}
+.cf button{font:700 16px 'Bricolage Grotesque',sans-serif;background:#fff;color:#0b0f12;border:0;border-radius:8px;padding:12px 18px;cursor:pointer;justify-self:start;transition:transform .2s}
+.cf button:hover{transform:translateY(-2px)}
+@media(max-width:760px){
+  nav .wrap{overflow:visible;gap:12px}
+  nav .links{display:none;position:absolute;top:56px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 24px 14px}
+  nav .links.open{display:flex}nav .links a{padding:10px 0}
+  .burger{display:block}.cgrid{grid-template-columns:1fr}
+}
